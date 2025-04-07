@@ -1,0 +1,9 @@
+Log do codigo
+
+2025-04-03 14:16:58.933194
+Adicionado: carro foi adicionado 
+ 
+
+2025-04-03 15:44:35.519422
+Adicionado: Cliente foi adicionado 
+ 

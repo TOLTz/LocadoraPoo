@@ -1,0 +1,16 @@
+{
+      "_default": {
+            "1": {
+                  "plate": "CHH2B10",
+                  "mark": "FIAT",
+                  "model": "PALIO",
+                  "year": "97",
+                  "color": "PRATA",
+                  "type_v": "CARRO",
+                  "status": "DISPONIVEL",
+                  "mileage": "99",
+                  "daily_value": 99.0,
+                  "sell_value": 99.0
+            }
+      }
+}

@@ -1,0 +1,24 @@
+{
+      "_default": {
+            "1": {
+                  "name": "joao",
+                  "birthday": "10/03/2006",
+                  "cpf": "38433345877",
+                  "gender": "M",
+                  "address": {
+                        "street": "rua",
+                        "district": "bairro",
+                        "number": 10,
+                        "city": "cidade",
+                        "cep": "cep",
+                        "country": "pais",
+                        "state": "SP"
+                  },
+                  "phone": "18997791500",
+                  "email": "joao@gmail.com",
+                  "client_id": "bb5e4e5c-ea0e-4dfa-8bbb-3877706e9a5c",
+                  "income": "9000",
+                  "car_rented": null
+            }
+      }
+}
