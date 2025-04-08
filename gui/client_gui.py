@@ -101,4 +101,4 @@ def abrir_formulario_cliente(root):
         except ValueError as e:
             messagebox.showerror("Erro", str(e))
 
-    ttk
+    ttk.Button(form, text="Salvar", command=salvar).pack(pady=15)
