@@ -1,7 +1,7 @@
 from uuid import uuid4
-from adress import Address, input_address_data
+from address import Address, input_address_data
 from verify import get_input
-from postion import Position
+from postion import Position, input_postion_data
 import verify
 
 class Person:
@@ -140,15 +140,15 @@ def input_client_data() -> Client:
 class Employee(Person):
     def __init__(self, name: str, birthday: str, cpf: str, gender: str, phone: str, email: str, position: Position,address: Address):
         super().__init__(name, birthday, cpf, gender, phone, email, address)
-        self.__employee_id = uuid4()
+        self.__employee_id = str(uuid4())
         self.__position = position
     
     @property
-    def employee_id(self) -> int:
+    def employee_id(self) -> str:
         return self.__employee_id
     
     @employee_id.setter
-    def employee_id(self, employee_id: int):
+    def employee_id(self, employee_id: str):
         self.__employee_id = employee_id
 
     @property
@@ -159,7 +159,7 @@ class Employee(Person):
     def position(self, position: Position):
         self.position = position
 
-    def empolyee_dict(self):
+    def empolyee_to_dict(self):
         return {"name": self.name,
             "birthday": self.birthday,
             "cpf": self.cpf,
@@ -170,3 +170,25 @@ class Employee(Person):
             "Employee_id": self.employee_id,
             "Position": self.position
             }
+        
+def input_employee_data() -> Employee:
+    print('\n--- Cadastro de Funcionario ---')
+    name = get_input('Nome: ', verify.none_word)
+    birthday = get_input('Data de nascimento: ', verify.is_date)
+    cpf = get_input('CPF: ', verify.is_cpf)
+    gender = get_input('Genero (M/F): ', verify.none_word)
+    phone = get_input('Celular (sem parenteses, hifen ou pontos ex: 18997791500): ', verify.is_phone)
+    email = get_input('email: ', verify.is_email)
+    address = input_address_data()
+    position = get_input('Cargo: ', verify.none_word)
+    return Employee(name=name, 
+                  birthday=birthday, 
+                  cpf=cpf, 
+                  gender=gender.upper(), 
+                  address=address,
+                  phone=phone, 
+                  email=email,
+                  position= position,)
+    
+# empregado = input_employee_data()
+# print(Employee.empolyee_to_dict(empregado))

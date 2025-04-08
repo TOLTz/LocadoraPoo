@@ -88,7 +88,7 @@ def input_address_data() -> Address:
     district = get_input("Bairro: ", verify.none_word)
     number = int(get_input("Número: ", lambda x: verify.is_num(x, int)))
     city = get_input("Cidade: ", verify.none_word)
-    cep = get_input("CEP (formato 00000-000): ", verify.none_word, 'Digite um CEP válido!')
+    cep = get_input("CEP (formato 00000-000): ", verify.none_word, 'Digite um CEP válido!') # criar validacao
     country = get_input("País: ", verify.none_word)
     state = get_input("Estado (sigla): ", verify.none_word, 'Digite uma sigla válida (2 caracteres)')
     return Address(

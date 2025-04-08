@@ -1,0 +1,10 @@
+{
+      "_default": {
+            "1": {
+                  "position": "Vendedor",
+                  "wage": 3621.0,
+                  "workload": "44",
+                  "commission": 8.0
+            }
+      }
+}

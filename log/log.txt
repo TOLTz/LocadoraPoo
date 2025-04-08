@@ -7,3 +7,11 @@ Adicionado: carro foi adicionado
 2025-04-03 15:44:35.519422
 Adicionado: Cliente foi adicionado 
  
+
+2025-04-08 15:34:35.668266
+Adicionado: Funcionario foi adicionado 
+ 
+
+2025-04-08 15:45:58.053664
+Adicionado: Cargo foi adicionado 
+ 
